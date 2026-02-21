@@ -13,4 +13,5 @@ Gosto de ir a fundo nas coisas e buscar clareza nas soluções. Criei este espa�
 - Trabalho como Desenvolvedor Pleno na [EGE Soluções](https://egesolucoes.com.br/)
 - Participo do [Grupo de Estudos Go](https://discord.com/invite/tvN5xfjKyV) do [Cesar](https://github.com/crgimenes)
 - Me encontre no [GitHub](https://github.com/walissonaguirra) e no [LinkedIn](https://www.linkedin.com/in/walissonaguirra)
+- [Baixar currículo](https://drive.google.com/file/d/19_wTIRafFThq0-M6cdgFZUu95w1cYTYs/view?usp=sharing)
 
