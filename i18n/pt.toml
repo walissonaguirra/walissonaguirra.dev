@@ -1,0 +1,20 @@
+[latestPosts]
+    other = 'Últimas publicações'
+    
+[readMore]
+    other = 'Ler mais'
+
+[summary]
+    other = 'Sumário'
+
+[estimatedReadingTime]
+    other = 'Tempo estimado de leitura: %d minutos'
+
+[404_title]
+    other = 'Página não encontrada'
+
+[404_text]
+    other = 'Parece que você seguiu um link quebrado ou inseriu uma URL que não existe neste site.'
+
+[404_back]
+    other = 'Voltar para a página inicial'

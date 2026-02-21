@@ -1,0 +1,33 @@
+# Homepage Config
+isSinglePage = true
+
+# Meta Config
+description = "Blog pessoal de Walisson Aguirra - Desenvolvedor de Software"
+
+# Header Configuration
+avatar = "img/profile-picture.png"
+
+#favicon
+favicon = "icons/favicon.ico"
+
+# disqus is a comment system. see https://disqus.com
+disqusShortname = ""
+
+[emoji]
+enableEmoji = false
+
+# giscus is a comment system based on GitHub Discussions. see https://giscus.app
+[giscus]
+    enable = true
+    repo = "walissonaguirra/walissonaguirra.dev"
+    repoId = "R_kgDORVpYIQ"
+    category = "Announcements"
+    categoryId = "DIC_kwDORVpYIc4C277t"
+    mapping = "pathname"
+    strict = 0
+    reactionsEnabled = 1
+    emitMetadata = 0
+    inputPosition = "top"
+    theme = "preferred_color_scheme"
+    lang = "pt"
+    lazyLoading = true
