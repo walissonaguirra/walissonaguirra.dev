@@ -16,6 +16,13 @@
     url = "/sobre"
     weight = 3
 
+[[main]]
+    identifier = "projetos"
+    name = "Projetos"
+    url = "/projetos"
+    weight = 4
+
+
 # Social Media Configuration
 
 [[social]]
