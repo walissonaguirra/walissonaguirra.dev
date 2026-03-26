@@ -3,8 +3,10 @@ title: "Matemática Elementar para Computação"
 slug: "matematica-elementar-para-computacao"
 date: 2026-03-24T21:32:36+00:00
 draft: false
+layout: single
+comments: true
 tags:
-  - matematica
+  - Matemática
 ---
 
 Estou revisando e estudando matemática do ensino médio com foco em aplicações práticas na computação. O objetivo é fortalecer minha base matemática para subir um degrau no conhecimento e me preparar para projetos futuros como o curso de Ciência da Computação da [UBL - Universidade Brasileira Livre](https://ulivre.dev). Alguns tópicos são revisão, outros são conteúdos que ainda não domino.
@@ -23,7 +25,7 @@ Conforme avanço nos estudos, cada tópico abaixo ganha um link para o post com 
 
 ### 1. Noções de Lógica
 
-- Noções de Lógica
+- [Noções de Lógica](nocoes-de-logica)
 
 ### 2. Conjuntos e Operações Básicas
 
