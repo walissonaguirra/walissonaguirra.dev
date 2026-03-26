@@ -5,6 +5,7 @@ defaultContentLanguageInSubdir = true
 theme = 'enchanted-lowkey'
 title = 'Walisson Aguirra'
 enableRobotsTXT = true
+enableGitInfo = true
 summaryLength = 15
 
 [languages]
