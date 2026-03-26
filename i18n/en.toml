@@ -23,6 +23,9 @@
     other = 'Last updated'
 
 
+[and]
+    other = 'and'
+
 [madeWith]
     other = 'made with'
 

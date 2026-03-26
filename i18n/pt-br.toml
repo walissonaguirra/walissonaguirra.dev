@@ -23,6 +23,9 @@
     other = 'Última atualização'
 
 
+[and]
+    other = 'e'
+
 [madeWith]
     other = 'feito com'
 
