@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ .Permalink }}</title>
+  <link rel="canonical" href="{{ .Permalink }}"/>
+  <meta name="robots" content="noindex">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  {{ if strings.HasSuffix .Permalink "/pt-br/" }}
+  <script>
+    (function() {
+      var lang = navigator.language || navigator.userLanguage || '';
+      if (lang.toLowerCase().startsWith('pt')) {
+        window.location.replace('/pt-br/');
+      } else {
+        window.location.replace('/en/');
+      }
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url={{ .Permalink }}"/>
+  </noscript>
+  {{ else }}
+  <meta http-equiv="refresh" content="0; url={{ .Permalink }}"/>
+  {{ end }}
+</head>
+</html>
