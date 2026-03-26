@@ -31,3 +31,5 @@ enableEmoji = false
     theme = "preferred_color_scheme"
     lang = "pt"
     lazyLoading = true
+
+
