@@ -2,6 +2,7 @@
 title: "CPU 8 Bits do Zero"
 slug: "cpu-8-bits-do-zero"
 date: 2026-03-24T12:37:36+00:00
+translationKey: "8bit-cpu"
 draft: true
 tags:
   - cpu-8bit

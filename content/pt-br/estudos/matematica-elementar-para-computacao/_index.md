@@ -2,6 +2,7 @@
 title: "Matemática Elementar para Computação"
 slug: "matematica-elementar-para-computacao"
 date: 2026-03-24T21:32:36+00:00
+translationKey: "math-for-computing"
 draft: false
 layout: single
 comments: true
