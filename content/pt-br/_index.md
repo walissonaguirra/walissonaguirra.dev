@@ -17,5 +17,5 @@ Criei este espaço para registrar aprendizados, compartilhar decisões técnicas
 
 - Engenheiro de Software na [EGE Soluções](https://egesolucoes.com.br/)
 - Participo do [Grupo de Estudos Go](https://discord.com/invite/tvN5xfjKyV) do [Cesar](https://github.com/crgimenes)
-- Me encontre no [GitHub](https://github.com/walissonaguirra), [Codeberg](https://codeberg.org/walissonaguirra), [Mastodon](https://mastodon.social/@walissonaguirra) e [LinkedIn](https://www.linkedin.com/in/walissonaguirra)
+- Me encontre no {{< social-links >}}
 - [Baixar currículo](https://drive.google.com/file/d/19_wTIRafFThq0-M6cdgFZUu95w1cYTYs/view?usp=sharing)

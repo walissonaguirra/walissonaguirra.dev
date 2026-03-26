@@ -17,5 +17,5 @@ I created this space to record learnings, share technical decisions and document
 
 - Software Engineer at [EGE Soluções](https://egesolucoes.com.br/)
 - Member of [Go Study Group](https://discord.com/invite/tvN5xfjKyV) by [Cesar](https://github.com/crgimenes)
-- Find me on [GitHub](https://github.com/walissonaguirra), [Codeberg](https://codeberg.org/walissonaguirra), [Mastodon](https://mastodon.social/@walissonaguirra) and [LinkedIn](https://www.linkedin.com/in/walissonaguirra)
+- Find me on {{< social-links >}}
 - [Download resume](https://drive.google.com/file/d/19_wTIRafFThq0-M6cdgFZUu95w1cYTYs/view?usp=sharing)
