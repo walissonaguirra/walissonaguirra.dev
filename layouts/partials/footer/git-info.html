@@ -1,0 +1,13 @@
+<div class="text-gray-400 dark:text-gray-500 text-center">
+  {{ with .GitInfo }}
+    {{ i18n "lastUpdated" }}: {{ .AuthorDate.Format "02/01/2006 15:04" }}
+    ·
+    <a
+      href="https://github.com/walissonaguirra/walissonaguirra.dev/commit/{{ .Hash }}"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {{ .AbbreviatedHash }}
+    </a>
+  {{ end }}
+</div>
