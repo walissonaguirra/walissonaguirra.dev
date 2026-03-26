@@ -18,3 +18,13 @@
 
 [404_back]
     other = 'Back to home'
+
+[lastUpdated]
+    other = 'Last updated'
+
+
+[madeWith]
+    other = 'made with'
+
+[licensedUnder]
+    other = 'Licensed under'

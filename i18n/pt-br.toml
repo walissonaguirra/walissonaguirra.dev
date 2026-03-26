@@ -18,3 +18,13 @@
 
 [404_back]
     other = 'Voltar para a página inicial'
+
+[lastUpdated]
+    other = 'Última atualização'
+
+
+[madeWith]
+    other = 'feito com'
+
+[licensedUnder]
+    other = 'Licenciado sob'
