@@ -16,12 +16,6 @@
     url = "/estudos"
     weight = 4
 
-[[main]]
-    identifier = "projetos"
-    name = "Projetos"
-    url = "/projetos"
-    weight = 5
-
 
 # Social Media Configuration
 
