@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 text-lg text-justify;
+    @apply bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 text-lg text-left sm:text-justify;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -40,7 +40,7 @@
   }
 
   p, hr, pre, dl {
-    @apply mb-5 text-justify;
+    @apply mb-5 text-left sm:text-justify;
   }
   
   article > h1 {
@@ -443,19 +443,31 @@
     @apply text-center sm:text-left text-4xl font-extrabold text-gray-800 dark:text-gray-100;
   }
 
-  .header {
-    @apply flex flex-row items-center justify-between;
+  .header-main {
+    @apply flex flex-col sm:flex-row items-center sm:justify-between gap-5 pt-6 sm:pt-16 pb-8;
   }
 
-  .header .toggle-theme {
+  .header-left {
+    @apply flex flex-col sm:flex-row items-center gap-5 sm:gap-10 order-2 sm:order-1;
+  }
+
+  .header-info {
+    @apply flex flex-col gap-5;
+  }
+
+  .header-actions {
+    @apply flex flex-row items-center gap-3 order-1 sm:order-2 self-end sm:self-center;
+  }
+
+  .header-actions .toggle-theme {
     @apply w-6 h-6;
   }
 
   .title-large {
-    @apply text-4xl leading-snug font-bold text-gray-900 dark:text-gray-300;
+    @apply text-4xl leading-snug font-bold text-gray-900 dark:text-gray-300 mb-0;
   }
 
   .title-small {
-    @apply text-2xl font-extrabold text-gray-900 dark:text-gray-300;
+    @apply text-2xl font-extrabold text-gray-900 dark:text-gray-300 mb-0;
   }
 }

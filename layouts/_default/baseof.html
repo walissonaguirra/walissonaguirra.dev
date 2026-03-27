@@ -5,13 +5,19 @@
   </head>
 
   <body class="max-w-screen-md mx-auto px-2.5">
-    <div class="header">
-      {{ partial "header/index" . }}
+    <header class="header-main">
+      <div class="header-left">
+        {{ partial "header/avatar" . }}
+        <div class="header-info">
+          {{ partial "header/title" . }}
+          {{ partial "header/nav" . }}
+        </div>
+      </div>
       <div class="header-actions">
         {{ partial "header/language-switcher" . }}
         {{ partial "header/theme-button" . }}
       </div>
-    </div>
+    </header>
 
     <main id="content">
       {{- block "main" . -}}
