@@ -92,17 +92,17 @@
   }
   
   table {
-    @apply w-full border rounded-md border-separate border-spacing-0 mb-5;
+    @apply w-full border border-gray-300 dark:border-gray-700 rounded-md border-separate border-spacing-0 mb-5;
   }
-  
+
   thead th {
-    @apply border-b-2 border-r last:border-r-0 py-2 px-3;
+    @apply border-b-2 border-r border-gray-300 dark:border-gray-700 last:border-r-0 py-2 px-3;
   }
-  
+
   tbody td {
-    @apply py-2 px-3 border-b text-base border-r last:border-r-0;
+    @apply py-2 px-3 border-b border-r border-gray-300 dark:border-gray-700 text-base last:border-r-0;
   }
-  
+
   tbody tr:last-child td {
     @apply border-b-0;
   }
