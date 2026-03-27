@@ -8,6 +8,12 @@ enableRobotsTXT = true
 enableGitInfo = true
 summaryLength = 15
 
+[minify]
+  minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepWhitespace = false
+
 [languages]
   [languages.pt-br]
     languageCode = 'pt-BR'
