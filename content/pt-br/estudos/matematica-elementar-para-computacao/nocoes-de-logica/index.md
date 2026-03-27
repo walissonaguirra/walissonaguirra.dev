@@ -4,6 +4,7 @@ slug: "nocoes-de-logica"
 date: 2026-03-25T12:23:00+00:00
 translationKey: "intro-to-logic"
 draft: false
+math: true
 tags:
   - Matemática
   - Noções de Lógica
