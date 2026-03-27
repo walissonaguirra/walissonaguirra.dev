@@ -73,5 +73,5 @@ As I progress through the studies, each topic below gets a link to the post with
 
 - Linear Regression by Least Squares
 - 3D Computer Graphics
-- Income Tax and Social Security Calculation
+- Cálculo do Imposto de Renda e INSS
 - Digital Images

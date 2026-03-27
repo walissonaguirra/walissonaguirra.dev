@@ -16,6 +16,6 @@ I created this space to record learnings, share technical decisions and document
 ---
 
 - Software Engineer at [EGE Soluções](https://egesolucoes.com.br/)
-- Member of [Go Study Group](https://discord.com/invite/tvN5xfjKyV) by [Cesar](https://github.com/crgimenes)
+- Member of [Grupo de Estudos Go](https://discord.com/invite/tvN5xfjKyV) by [Cesar](https://github.com/crgimenes)
 - Find me on {{< social-links >}}
-- [Download resume](https://drive.google.com/file/d/19_wTIRafFThq0-M6cdgFZUu95w1cYTYs/view?usp=sharing)
+- [Download CV](https://drive.google.com/file/d/19_wTIRafFThq0-M6cdgFZUu95w1cYTYs/view?usp=sharing)
