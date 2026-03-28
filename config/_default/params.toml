@@ -10,6 +10,13 @@ avatar = "img/profile-picture.png"
 #favicon
 favicon = "icons/favicon.ico"
 
+# Author
+[author]
+  name = "Walisson Aguirra"
+  url = "https://walissonaguirra.dev/"
+  github = "https://github.com/walissonaguirra"
+  linkedin = "https://www.linkedin.com/in/walissonaguirra"
+
 # disqus is a comment system. see https://disqus.com
 disqusShortname = ""
 

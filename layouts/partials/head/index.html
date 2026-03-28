@@ -6,6 +6,25 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 
+<!-- Preconnect -->
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+<!-- Canonical -->
+<link rel="canonical" href="{{ .Permalink }}" />
+
+<!-- Robots -->
+{{ if .Params.noindex }}
+<meta name="robots" content="noindex, nofollow" />
+{{ else }}
+<meta name="robots" content="index, follow" />
+{{ end }}
+
+<!-- Author -->
+{{ with .Site.Params.author }}
+<meta name="author" content="{{ .name }}" />
+{{ end }}
+
 <!-- Open Graph / SEO -->
 <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
 <meta property="og:description" content="{{ if .IsPage }}{{ or .Params.description .Summary }}{{ else if .IsHome }}{{ .Site.Params.description }}{{ else if .IsNode }}{{ or .Params.description .Summary }}{{ end }}" />
@@ -16,21 +35,75 @@
 {{ if .IsPage }}
 {{ with .PublishDate }}<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}" />{{ end }}
 {{ with .Lastmod }}<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}" />{{ end }}
+{{ with .Site.Params.author }}<meta property="article:author" content="{{ .name }}" />{{ end }}
+{{ with .Params.tags }}{{ range . }}<meta property="article:tag" content="{{ . }}" />
+{{ end }}{{ end }}
 {{ end }}
 {{ with .Params.cover }}
 <meta property="og:image" content="{{ . | absURL }}" />
 {{ else }}
 <meta property="og:image" content="{{ "android-chrome-512x512.png" | absURL }}" />
+<meta property="og:image:width" content="512" />
+<meta property="og:image:height" content="512" />
 {{ end }}
 
 <!-- Twitter Cards -->
-<meta name="twitter:card" content="summary" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
 <meta name="twitter:description" content="{{ if .IsPage }}{{ or .Params.description .Summary }}{{ else if .IsHome }}{{ .Site.Params.description }}{{ else if .IsNode }}{{ or .Params.description .Summary }}{{ end }}" />
 {{ with .Params.cover }}
 <meta name="twitter:image" content="{{ . | absURL }}" />
 {{ else }}
 <meta name="twitter:image" content="{{ "android-chrome-512x512.png" | absURL }}" />
+{{ end }}
+
+<!-- JSON-LD Structured Data -->
+{{ if .IsHome }}
+{{ $schema := dict
+  "@context" "https://schema.org"
+  "@type" "WebSite"
+  "name" .Site.Title
+  "url" .Site.BaseURL
+  "description" .Site.Params.description
+  "inLanguage" .Site.LanguageCode
+  "author" (dict
+    "@type" "Person"
+    "name" .Site.Params.author.name
+    "url" .Site.Params.author.url
+    "sameAs" (slice .Site.Params.author.github .Site.Params.author.linkedin)
+  )
+}}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+{{ else if .IsPage }}
+{{ $article := dict
+  "@context" "https://schema.org"
+  "@type" "BlogPosting"
+  "headline" .Title
+  "description" (or .Params.description (.Summary | plainify | truncate 160))
+  "url" .Permalink
+  "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")
+  "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+  "inLanguage" .Site.LanguageCode
+  "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+  "author" (dict "@type" "Person" "name" .Site.Params.author.name "url" .Site.Params.author.url)
+  "publisher" (dict "@type" "Person" "name" .Site.Params.author.name "url" .Site.Params.author.url)
+}}
+{{ with .Params.tags }}{{ $article = merge $article (dict "keywords" .) }}{{ end }}
+{{ with .Params.cover }}{{ $article = merge $article (dict "image" (. | absURL)) }}{{ end }}
+<script type="application/ld+json">{{ $article | jsonify | safeJS }}</script>
+
+<!-- BreadcrumbList -->
+{{ $items := slice (dict "@type" "ListItem" "position" 1 "name" .Site.Title "item" .Site.BaseURL) }}
+{{ $pos := 2 }}
+{{ range .CurrentSection.Ancestors.Reverse }}
+{{ if .Title }}
+{{ $items = $items | append (dict "@type" "ListItem" "position" $pos "name" .Title "item" .Permalink) }}
+{{ $pos = add $pos 1 }}
+{{ end }}
+{{ end }}
+{{ $items = $items | append (dict "@type" "ListItem" "position" $pos "name" .Title "item" .Permalink) }}
+{{ $breadcrumb := dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $items }}
+<script type="application/ld+json">{{ $breadcrumb | jsonify | safeJS }}</script>
 {{ end }}
 
 <!-- Fonts (self-hosted) -->
