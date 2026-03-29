@@ -1,7 +1,7 @@
 baseURL = 'https://walissonaguirra.dev/'
 copyright = "{year}"
 defaultContentLanguage = 'pt-br'
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 theme = 'enchanted-lowkey'
 title = 'Walisson Aguirra'
 enableRobotsTXT = true
@@ -18,17 +18,17 @@ summaryLength = 15
   [languages.pt-br]
     languageCode = 'pt-BR'
     languageName = 'Português'
-    contentDir = 'content/pt-br'
+    contentDir = 'content'
     weight = 1
     [languages.pt-br.params]
-      description = "Blog pessoal de Walisson Aguirra — engenheiro de software focado em backend, arquitetura de aplicações, Go e PHP."
+      description = "Engenheiro de software focado em backend, arquitetura de aplicações, Go e PHP."
   [languages.en]
     languageCode = 'en'
     languageName = 'English'
     contentDir = 'content/en'
     weight = 2
     [languages.en.params]
-      description = "Personal blog of Walisson Aguirra — software engineer focused on backend, application architecture, Go and PHP."
+      description = "Software engineer focused on backend, application architecture, Go and PHP."
 
 [pagination]
   pagerSize = 5

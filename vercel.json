@@ -1,4 +1,5 @@
 {
+  "buildCommand": "hugo --minify && rm -rf public/pt-br",
   "headers": [
     {
       "source": "/fonts/(.*)",
