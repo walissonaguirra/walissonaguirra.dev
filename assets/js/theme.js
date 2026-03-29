@@ -5,7 +5,7 @@ function getSystemTheme() {
 }
 
 function applyTheme(theme) {
-  var html = document.querySelector('html');
+  var html = document.documentElement;
 
   if (theme === 'light') {
     html.classList.remove('dark');
@@ -29,7 +29,7 @@ mediaQuery.addEventListener('change', function () {
 });
 
 function toggleTheme() {
-  var current = document.querySelector('html').classList.contains('dark') ? 'dark' : 'light';
+  var current = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
   var next = current === 'dark' ? 'light' : 'dark';
   sessionStorage.setItem('theme', next);
   applyTheme(next);

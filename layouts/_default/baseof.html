@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default `en` }}" class="scroll-smooth dark">
+<html lang="{{ .Site.LanguageCode | default `en` }}" class="scroll-smooth">
+  <script>
+    (function(){var t=sessionStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(t==='dark')document.documentElement.classList.add('dark')})();
+  </script>
   <head>
     {{- partial "head/index" . -}}
   </head>
