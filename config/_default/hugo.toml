@@ -18,7 +18,7 @@ summaryLength = 15
   [languages.pt-br]
     languageCode = 'pt-BR'
     languageName = 'Português'
-    contentDir = 'content'
+    contentDir = 'content/pt'
     weight = 1
     [languages.pt-br.params]
       description = "Engenheiro de software focado em backend, arquitetura de aplicações, Go e PHP."
