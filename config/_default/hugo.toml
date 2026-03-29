@@ -20,11 +20,15 @@ summaryLength = 15
     languageName = 'Português'
     contentDir = 'content/pt-br'
     weight = 1
+    [languages.pt-br.params]
+      description = "Blog pessoal de Walisson Aguirra — engenheiro de software focado em backend, arquitetura de aplicações, Go e PHP."
   [languages.en]
     languageCode = 'en'
     languageName = 'English'
     contentDir = 'content/en'
     weight = 2
+    [languages.en.params]
+      description = "Personal blog of Walisson Aguirra — software engineer focused on backend, application architecture, Go and PHP."
 
 [pagination]
   pagerSize = 5
