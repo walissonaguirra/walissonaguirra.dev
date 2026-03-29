@@ -5,16 +5,10 @@ function getSystemTheme() {
 }
 
 function applyTheme(theme) {
-  var html = document.documentElement;
-
   if (theme === 'light') {
-    html.classList.remove('dark');
-    document.querySelector('.theme-icon.light').style.display = 'none';
-    document.querySelector('.theme-icon.dark').style.display = 'block';
+    document.documentElement.classList.remove('dark');
   } else {
-    html.classList.add('dark');
-    document.querySelector('.theme-icon.dark').style.display = 'none';
-    document.querySelector('.theme-icon.light').style.display = 'block';
+    document.documentElement.classList.add('dark');
   }
 }
 

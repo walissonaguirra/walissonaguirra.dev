@@ -467,6 +467,19 @@
     @apply w-6 h-6;
   }
 
+  .theme-icon.light,
+  .theme-icon.dark {
+    display: none;
+  }
+
+  html.dark .theme-icon.light {
+    display: block;
+  }
+
+  html:not(.dark) .theme-icon.dark {
+    display: block;
+  }
+
   .title-large {
     @apply text-4xl leading-snug font-bold text-gray-900 dark:text-gray-300 mb-0;
   }
