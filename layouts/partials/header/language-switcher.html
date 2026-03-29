@@ -5,7 +5,9 @@
   <select onchange="if(this.value) window.location.href=this.value">
     <option value="" selected>{{ .Language.LanguageName }}</option>
     {{ range .Translations }}
+      {{ if ne .Language.Lang $.Language.Lang }}
       <option value="{{ .Permalink }}">{{ .Language.LanguageName }}</option>
+      {{ end }}
     {{ end }}
   </select>
 </div>
