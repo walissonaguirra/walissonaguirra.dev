@@ -1,5 +1,13 @@
 {
   "buildCommand": "hugo --minify && rm -rf public/pt-br",
+  "redirects": [
+    {
+      "source": "/",
+      "has": [{ "type": "header", "key": "accept-language", "value": "en.*" }],
+      "destination": "/en/",
+      "statusCode": 302
+    }
+  ],
   "headers": [
     {
       "source": "/fonts/(.*)",
