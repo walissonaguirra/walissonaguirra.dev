@@ -3,6 +3,15 @@
   "redirects": [
     {
       "source": "/",
+      "has": [
+        { "type": "header", "key": "accept-language", "value": "en.*" },
+        { "type": "cookie", "key": "lang", "value": "en" }
+      ],
+      "destination": "/en/",
+      "statusCode": 302
+    },
+    {
+      "source": "/",
       "has": [{ "type": "header", "key": "accept-language", "value": "en.*" }],
       "missing": [{ "type": "cookie", "key": "lang" }],
       "destination": "/en/",
